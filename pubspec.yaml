@@ -1,0 +1,66 @@
+name: universal_player
+description: "一款全平台通用的免费无广告音视频播放器"
+publish_to: 'none'
+version: 1.0.0+1
+
+environment:
+  sdk: '>=3.2.0 <4.0.0'
+
+dependencies:
+  flutter:
+    sdk: flutter
+  
+  # 音视频播放核心 - media_kit是目前最好的跨平台方案
+  media_kit: ^1.1.10+1
+  media_kit_video: ^1.2.4
+  media_kit_libs_android_video: ^1.1.1
+  media_kit_libs_android_audio: ^1.1.1
+  media_kit_libs_ios_video: ^1.1.1
+  media_kit_libs_ios_audio: ^1.1.1
+  
+  # 状态管理 - Riverpod是推荐的现代状态管理方案
+  flutter_riverpod: ^2.4.9
+  riverpod_annotation: ^2.3.3
+  
+  # 后台播放和锁屏控制
+  audio_service: ^0.18.12
+  audio_session: ^0.1.18
+  
+  # 文件选择和路径管理
+  file_picker: ^6.1.1
+  path_provider: ^2.1.2
+  path: ^1.8.3
+  
+  # 权限管理
+  permission_handler: ^11.2.0
+  
+  # 本地存储
+  shared_preferences: ^2.2.2
+  
+  # 屏幕常亮
+  wakelock_plus: ^1.1.4
+  
+  # UI组件
+  cupertino_icons: ^1.0.6
+  flutter_slidable: ^3.0.1
+  
+  # 工具库
+  uuid: ^4.3.1
+  intl: ^0.18.1
+  collection: ^1.18.0
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^3.0.1
+  riverpod_generator: ^2.3.9
+  build_runner: ^2.4.8
+
+flutter:
+  uses-material-design: true
+  
+  # 应用图标
+  # 使用默认Flutter图标，可替换为自定义图标
+  # assets:
+  #   - assets/images/
+  #   - assets/icons/

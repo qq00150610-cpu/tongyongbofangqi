@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+    <!-- 应用名称 -->
+    <key>CFBundleName</key>
+    <string>通用播放器</string>
+    
+    <!-- 应用显示名称 -->
+    <key>CFBundleDisplayName</key>
+    <string>通用播放器</string>
+    
+    <!-- 应用包名 -->
+    <key>CFBundleIdentifier</key>
+    <string>$(PRODUCT_BUNDLE_IDENTIFIER)</string>
+    
+    <!-- 应用版本 -->
+    <key>CFBundleShortVersionString</key>
+    <string>$(FLUTTER_BUILD_NAME)</string>
+    
+    <!-- 构建版本 -->
+    <key>CFBundleVersion</key>
+    <string>$(FLUTTER_BUILD_NUMBER)</string>
+    
+    <!-- 应用图标 -->
+    <key>CFBundleIcons</key>
+    <dict>
+        <key>PrimaryIcon</key>
+        <dict>
+            <key>FileContents</key>
+            <string>AppIcon.appiconset/Icon-1024.png</string>
+        </dict>
+    </dict>
+    
+    <!-- 支持的方向 -->
+    <key>UISupportedInterfaceOrientations</key>
+    <array>
+        <string>UIInterfaceOrientationPortrait</string>
+        <string>UIInterfaceOrientationLandscapeLeft</string>
+        <string>UIInterfaceOrientationLandscapeRight</string>
+    </array>
+    
+    <key>UISupportedInterfaceOrientations~ipad</key>
+    <array>
+        <string>UIInterfaceOrientationPortrait</string>
+        <string>UIInterfaceOrientationPortraitUpsideDown</string>
+        <string>UIInterfaceOrientationLandscapeLeft</string>
+        <string>UIInterfaceOrientationLandscapeRight</string>
+    </array>
+    
+    <!-- 支持的文件类型 -->
+    <key>CFBundleDocumentTypes</key>
+    <array>
+        <dict>
+            <key>CFBundleTypeName</key>
+            <string>Audio</string>
+            <key>LSHandlerRank</key>
+            <string>Default</string>
+            <key>LSItemContentTypes</key>
+            <array>
+                <string>public.audio</string>
+                <string>public.mp3</string>
+                <string>public.mpeg-4-audio</string>
+                <string>org.xiph.flac</string>
+                <string>public.aifc-audio</string>
+                <string>public.aiff-audio</string>
+                <string>com.apple.m4a-audio</string>
+            </array>
+        </dict>
+        <dict>
+            <key>CFBundleTypeName</key>
+            <string>Video</string>
+            <key>LSHandlerRank</key>
+            <string>Default</string>
+            <key>LSItemContentTypes</key>
+            <array>
+                <string>public.movie</string>
+                <string>public.mpeg-4</string>
+                <string>public.avi</string>
+                <string>org.matroska.mkv</string>
+                <string>com.apple.quicktime-movie</string>
+            </array>
+        </dict>
+    </array>
+    
+    <!-- 后台播放模式 -->
+    <key>UIBackgroundModes</key>
+    <array>
+        <string>audio</string>
+    </array>
+    
+    <!-- 音乐库访问权限 -->
+    <key>NSAppleMusicUsageDescription</key>
+    <string>需要访问您的音乐库以播放本地音乐文件</string>
+    
+    <!-- 照片库访问权限 -->
+    <key>NSPhotoLibraryUsageDescription</key>
+    <string>需要访问您的照片库以选择视频文件</string>
+    
+    <!-- 照片库添加权限 -->
+    <key>NSPhotoLibraryAddUsageDescription</key>
+    <string>需要保存视频到您的照片库</string>
+    
+    <!-- 文件共享启用 -->
+    <key>UIFileSharingEnabled</key>
+    <true/>
+    
+    <!-- 支持在原地打开文档 -->
+    <key>LSSupportsOpeningDocumentsInPlace</key>
+    <true/>
+    
+    <!-- 应用启动时保持播放状态 -->
+    <key>UIApplicationSupportsMultipleScenes</key>
+    <false/>
+    
+    <!-- 状态栏样式 -->
+    <key>UIStatusBarStyle</key>
+    <string>UIStatusBarStyleDefault</string>
+    
+    <!-- 视图控制器状态栏 -->
+    <key>UIViewControllerBasedStatusBarAppearance</key>
+    <true/>
+</dict>
+</plist>
