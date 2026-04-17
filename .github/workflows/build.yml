@@ -24,7 +24,10 @@ jobs:
     - name: Create keystore
       run: |
         mkdir -p android/app/keystore
-        echo "${{ secrets.KEYSTORE_BASE64 }}" | base64 -d > android/app/keystore/release.jks
+        keytool -genkeypair -v -keystore android/app/keystore/release.jks \
+          -alias release -keyalg RSA -keysize 2048 -validity 10000 \
+          -storepass qq900236 -keypass qq900236 \
+          -dname "CN=Release, OU=Dev, O=Company, L=City, ST=State, C=CN"
     
     - name: Get dependencies
       run: flutter pub get
